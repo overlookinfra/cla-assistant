@@ -33,6 +33,7 @@ const indexOptions = {
     unique: true,
     partialFilterExpression: { userId: { $exists: true } },
     background: true,
+    name: 'cla-index',
 }
 
 const CLA = mongoose.model('CLA', CLASchema)
